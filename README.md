@@ -1,13 +1,43 @@
-# Latnikov LAB 1
+# Лабораторная работа № 1
 
-Console applications that print the prime numbers strictly between two natural numbers.
+Консольные программы на C++ и Python, которые выводят все простые числа, расположенные строго между двумя натуральными числами.
 
-## C++ with Qt Creator
+## Структура проекта
 
-Open `cpp/Latnikov_LAB_1.pro` in Qt Creator, select the Desktop Qt MinGW kit, build, and run.
+- `cpp/` — версия на C++ для Qt Creator.
+- `python/` — версия на Python для PyCharm.
 
-## Python
+В каждой версии вычисление простых чисел находится в отдельном модуле, который не взаимодействует с пользователем.
 
-Run `python/main.py` with Python 3.9 or later.
+## Запуск версии на C++ в Qt Creator
 
-Both programs accept two natural numbers separated by whitespace. The prime-number module contains no user interaction.
+1. Откройте в Qt Creator файл `cpp/Latnikov_LAB_1.pro`.
+2. Выберите комплект **Desktop Qt MinGW 64-bit**.
+3. Соберите проект сочетанием клавиш `Ctrl+B`.
+4. Запустите программу сочетанием клавиш `Ctrl+R`.
+5. Введите два натуральных числа через пробел.
+
+## Запуск версии на Python в PyCharm
+
+Откройте каталог `python` как проект в PyCharm и запустите файл `main.py`. Требуется Python 3.9 или новее.
+
+## Пример
+
+Ввод:
+
+```text
+10 30
+```
+
+Вывод:
+
+```text
+11
+13
+17
+19
+23
+29
+```
+
+Границы не включаются в результат. Числа можно вводить в любом порядке.
